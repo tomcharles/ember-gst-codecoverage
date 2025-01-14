@@ -112,5 +112,8 @@
   },
   "dependencies": {
     "@types/htmlbars-inline-precompile": "^3.0.3"
+  },
+  "volta": {
+    "node": "20.0.0"
   }
 }
