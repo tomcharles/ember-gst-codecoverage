@@ -13,6 +13,9 @@ module.exports = function (defaults) {
       extensions: ['js']
     },
     'ember-cli-babel': { enableTypeScriptTransform: true },
+    'ember-template-imports': {
+      inline_source_map: true,
+    },
   });
 
   return app.toTree();
