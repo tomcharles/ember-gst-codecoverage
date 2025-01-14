@@ -1,5 +1,13 @@
 <div>
   <h1 data-test-counter>{{this.value}}</h1>
-  <button {{on "click" this.increment}} data-test-increment>Increment</button>
-  <button {{on "click" this.decrement}} data-test-decrement>Decrement</button>
+  <button
+    {{on "click" this.increment}}
+    type="button"
+    data-test-increment
+  >Increment</button>
+  <button
+    {{on "click" this.decrement}}
+    type="button"
+    data-test-decrement
+  >Decrement</button>
 </div>
