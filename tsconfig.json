@@ -6,6 +6,8 @@
     // layout, which is not resolvable with the Node resolution algorithm, to
     // work with TypeScript.
     "baseUrl": ".",
+    "inlineSourceMap": true,
+    "inlineSources": true,
     "paths": {
       "ember-gst-codecoverage/tests/*": [
         "tests/*"
