@@ -23,4 +23,16 @@ module('Integration | Component | double-file-counter', function (hooks) {
       .dom('[data-test-counter]')
       .hasText('0', 'has correct decremented value');
   });
+
+  test('it shows negative text when value is negative', async function (assert) {
+    await render(hbs`<DoubleFileCounter />`);
+
+    assert.dom('[data-test-counter]').hasText('0', 'has correct initial value');
+
+    await click('[data-test-decrement]');
+
+    assert
+      .dom('[data-test-counter]')
+      .hasText('-1 (negative)', 'has correct decremented value with negative text');
+  });
 });
